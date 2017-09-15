@@ -110,7 +110,9 @@ tmux_init()
 
 # 判断是否已有开启的tmux会话，没有则开启
 if which tmux 2>&1 >/dev/null; then
-    test -z "$TMUX" && (tmux attach || tmux_init)
+   test -z "$TMUX" && (tmux attach || tmux_init)
 fi
+
 alias cman='man -M /usr/share/man/zh_CN'
 alias ctrans='trans :zh'
+alias vi='vim'
