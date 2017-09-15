@@ -3,6 +3,9 @@ let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+inoremap <c-e> <end>
+inoremap <c-a> <home>
+
 " set the runtime path to include Vundle and initialize
 set rtp+=/home/pierre/.vim/bundle/Vundle.vim
 call vundle#begin()

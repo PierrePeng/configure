@@ -86,7 +86,7 @@ source $ZSH/oh-my-zsh.sh
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 
 alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
-set -o vi
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 source /opt/ros/indigo/setup.zsh
