@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=~/.oh-my-zsh
+export ZSH=/home/pierre/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -115,3 +115,6 @@ fi
 alias cman='man -M /usr/share/man/zh_CN'
 alias ctrans='trans :zh'
 alias vi='vim'
+
+export ROS_HOSTNAME=pierre.local
+export ROS_MASTER_URI=http://ilife:11311
