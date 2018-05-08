@@ -89,7 +89,7 @@ alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-source /opt/ros/indigo/setup.zsh
+source /opt/ros/kinetic/setup.zsh
 source /home/pierre/catkin_ws/devel/setup.zsh
 # export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:/home/pierre/workspace/ORB_SLAM2-master/Examples/ROS
 # export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:/home/pierre/workspace/jingpang-LearnVIORB-master/Examples/ROS
@@ -118,3 +118,4 @@ alias vi='vim'
 
 export ROS_HOSTNAME=pierre.local
 export ROS_MASTER_URI=http://ilife:11311
+export http_proxy=http://localhost:8123
