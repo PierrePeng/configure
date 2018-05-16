@@ -95,12 +95,9 @@ source /home/pierre/catkin_ws/devel/setup.zsh
 # export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:/home/pierre/workspace/jingpang-LearnVIORB-master/Examples/ROS
 # export ROS_HOSTNAME=pierre.local
 # export ROS_MASTER_URI=http://ilife:11311
-# export PATH=~/gcc-5.2.0/bin:$PATH
-# export LD_LIBRARY_PATH=~/gcc-5.2.0/lib:$LD_LIBRARY_PATH
-# export LD_LIBRARY_PATH=~/gcc-5.2.0/lib64:$LD_LIBRARY_PATH
 tmux_init()
 {
-    tmux new-session -s "curr" -d -n "local"    # 开启一个会话
+    tmux new-session -d -n "local"    # 开启一个会话
 #   tmux new-window -n "other"          # 开启一个窗口
     tmux split-window -h                # 开启一个竖屏
 #   tmux split-window -v "htop"          # 开启一个横屏,并执行top命令
@@ -108,9 +105,7 @@ tmux_init()
 }
 
 # 判断是否已有开启的tmux会话，没有则开启
-if which tmux 2>&1 >/dev/null; then
-   test -z "$TMUX" && (tmux attach || tmux_init)
-fi
+test -z "$TMUX" && (tmux_init)
 
 alias cman='man -M /usr/share/man/zh_CN'
 alias ctrans='trans :zh'
