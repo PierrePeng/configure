@@ -56,6 +56,7 @@ plugins=(git textmate ruby autojump osx mvn gradle)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+# source ~/.bash_profile
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -113,4 +114,10 @@ alias vi='vim'
 
 export ROS_HOSTNAME=pierre.local
 export ROS_MASTER_URI=http://ilife:11311
-export http_proxy=http://localhost:8123
+export OPENCV_TEST_DATA_PATH=/home/pierre/opencv_extra/testdata
+
+#export TURTLEBOT3_MODEL=${TB3_MODEL}
+
+
+
+
