@@ -8,5 +8,4 @@ xhost + && sudo docker run -it \
     --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw"  -v ~/.rviz/default.rviz:/root/.rviz/default.rviz \
     ros:ilife_x900 \
     bash -c "rosrun rviz rviz /root/.rviz/default.rviz"
-bck-i-search: xh_
 

@@ -51,7 +51,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git textmate ruby autojump osx mvn gradle)
+plugins=(git textmate ruby autojump osx mvn gradle web-search extract)
 
 source $ZSH/oh-my-zsh.sh
 
