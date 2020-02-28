@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/pierre/.oh-my-zsh
+export ZSH=/home/pierre/git/oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -51,7 +51,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git textmate ruby autojump osx mvn gradle web-search extract)
+plugins=(git textmate ruby osx mvn gradle autojump web-search extract git-open)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -92,10 +92,6 @@ alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
 
 source /opt/ros/kinetic/setup.zsh
 source /home/pierre/catkin_ws/devel/setup.zsh
-# export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:/home/pierre/workspace/ORB_SLAM2-master/Examples/ROS
-# export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:/home/pierre/workspace/jingpang-LearnVIORB-master/Examples/ROS
-# export ROS_HOSTNAME=pierre.local
-# export ROS_MASTER_URI=http://ilife:11311
 tmux_init()
 {
     tmux new-session -d -n "local"    # 开启一个会话
@@ -112,12 +108,12 @@ alias cman='man -M /usr/share/man/zh_CN'
 alias ctrans='trans :zh'
 alias vi='vim'
 
-export ROS_HOSTNAME=pierre.local
-export ROS_MASTER_URI=http://ilife:11311
-export OPENCV_TEST_DATA_PATH=/home/pierre/opencv_extra/testdata
 
+#export OPENCV_TEST_DATA_PATH=/home/pierre/opencv_extra/testdata
 #export TURTLEBOT3_MODEL=${TB3_MODEL}
 
-
-
+export GAZEBO_MODEL_PATH=/home/pierre/gazebo_plugin/models
+export GAZEBO_PLUGIN_PATH=/home/pierre/gazebo_plugin/build
+export GAZEBO_RESOURCE_PATH=/home/pierre/gazebo_plugin/worlds
+source /usr/share/gazebo/setup.sh
 
